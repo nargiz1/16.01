@@ -1,0 +1,120 @@
+//css
+
+#navbar{
+    padding: 10px 0!important;
+}
+#navbar img{
+    width: 150px;
+}
+#navbar .filter-white{
+    filter: invert(100%) sepia(0%) saturate(4354%) hue-rotate(176deg) brightness(101%) contrast(110%)!important;
+}
+#navbar .navbar-nav a{
+    transition: all .3s ease;
+    color: #ffffff;
+}
+#navbar .myBtn{
+    background-color: white;
+    color: black!important;
+}
+#navbar .myBtn:hover{
+    background-color: #7e57ff;
+    color: white!important;
+}
+#navbar .navbar-nav a.active{
+    color: #7e57ff!important;
+}
+#navbar .navbar-nav a:hover{
+    color: #7e57ff!important;
+}
+#navbar.scrolled{
+    background-color: white;
+}
+#navbar.scrolled .navbar-nav a{
+    color: black;
+}
+#navbar.scrolled .myBtn{
+    background-color: #7e57ff;
+    color: white!important;
+}
+#navbar.scrolled .myBtn:hover{
+    background-color: black!important;
+}
+#navbar .pages{
+    background-color: white;
+    list-style-type: none!important;
+    width: 200px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 83px;
+    left: 730px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+#navbar .pages li{
+    margin-bottom: 12px;
+}
+#navbar .pages a{
+    text-decoration: none;
+    color: #727272!important;
+    font-size: 15px;
+}
+
+
+
+//html
+
+<section id="navbar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="img/white-logo.svg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class=" page nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu pages" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Our Pricing</a></li>
+                                <li><a class="dropdown-item" href="#">Singn In</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Mail Success</a></li>
+                                <li><a class="dropdown-item" href="#">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </div>
+                    <div class="justify-content-end right-nav d-none d-lg-block">
+                        <div class="navbar-nav">
+                            <a href="#" class="myBtn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </section>
